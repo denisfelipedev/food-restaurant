@@ -112,6 +112,27 @@
     width: 300px;
 }
 
+/* About Styling */
+
+
+
+/* Button Styling */
+
+.button {
+    border: 1px solid red;
+    display: inline-block;
+    background-color:var(--first-color);
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .4s;
+    margin-bottom: var(--mb-2);
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
 /* Responsive Part */
 
 @media screen and (max-width: 768px) {
