@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
 
 :root {
+    --header-height: 3rem;
     /* Font Colors */
 
     --first-color: #069c54;
@@ -34,7 +35,6 @@
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
-    --header-height: 2rem;
 
     /* Z-index */
     --z-tooltip: 10;
@@ -43,8 +43,6 @@
 
 *,::before,::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {

@@ -8,10 +8,116 @@
     align-items: center;
 }
 
+
+
+.nav__item {
+    margin-bottom: var(--mb-2);
+}
+
+.nav__link, .nav__logo, .nav__toggle {
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover,
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__link {
+    transition: .3s;
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show Menu */
+
+.nav__menu.show-menu {
+    top: var(--header-height);
+}
+
+/* Active Link Menu */
+
+.active-link {
+    color: var(--first-color);
+}
+
+/* Change the background header */
+
+.scroll-header {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+/* Scroll Top */
+
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6,156, 84, .5);
+    border-radius: .4rem;
+    z-index: var(--z-toolip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    background: var(--first-color-alt);
+}
+
+.scrolltop__icon {
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
+
+/* Show Scrolltop */
+
+.scroll-top {
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
+/* Home Styling */
+.home__container {
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.home__subtitle {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__img {
+    width: 300px;
+}
+
+/* Responsive Part */
+
 @media screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;
-        top: var(--header-height);
+        top: -100%;
         left: 0;
         width: 100%;
         padding: 1.5rem 0 1rem 0;
@@ -20,6 +126,6 @@
         transition: .4s;
         box-shadow: 0 4px 4px rgba(0,0,0,.1);
         border-radius: 0 0 1rem 1rem;
-
+        z-index: var(--z-fixed);
     }
 }
