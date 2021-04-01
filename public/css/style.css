@@ -258,8 +258,10 @@
 /* Footer Styling */
 
 .footer__container {
-    grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
+    align-items: center;
+    margin: 0 var(--mb-2);
 }
 
 .footer__logo {
@@ -396,7 +398,6 @@
 
     .about__container,
     .app__container {
-        border: 1px solid red;
         column-gap: 7rem;
     }
 }
@@ -414,5 +415,11 @@
         box-shadow: 0 4px 4px rgba(0,0,0,.1);
         border-radius: 0 0 1rem 1rem;
         z-index: var(--z-fixed);
+    }
+}
+
+@media screen and (max-width: 497px) {
+    .footer__content {
+        text-align: center;
     }
 }

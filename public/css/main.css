@@ -78,6 +78,16 @@ img {
     height: auto;
 }
 
+.home,
+.services,
+.app {
+    background-color: #f8f8f8;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
 .section {
     padding: 4rem 0 2rem;
 }
