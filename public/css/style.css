@@ -306,7 +306,6 @@
 
 
 
-
 /* Responsive Part */
 
 @media screen and (min-width: 576px) {
@@ -360,6 +359,11 @@
 
     .nav__toggle {
         display: none;
+    }
+
+    .change-theme {
+        position: initial;
+        margin-left: var(--mb-5);
     }
 
     .home__container {
@@ -416,6 +420,8 @@
         border-radius: 0 0 1rem 1rem;
         z-index: var(--z-fixed);
     }
+
+    
 }
 
 @media screen and (max-width: 497px) {
